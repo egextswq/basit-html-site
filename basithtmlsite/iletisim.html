@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim | Ege</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #00c37e, #0078ff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(31, 31, 31, 0.9);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00c37e;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #0078ff;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin: 30px 0 20px;
+      color: #222;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    strong {
+      color: #00b686;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+      background-color: #ffffff;
+      padding: 12px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-5px);
+      background-color: #f1f1f1;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 20px;
+      background-color: rgba(31, 31, 31, 0.9);
+      color: white;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .content {
+        margin: 30px 20px;
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Anasayfa</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <a href="projeler.html">Projeler</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+
+<div class="content">
+  <h2>İletişim</h2>
+  <p>E-posta: <strong>ege.uludas1@gmail.com</strong></p>
+
+  <h3>Sosyal Medya</h3>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/ege-uludaş-012069191/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      LinkedIn
+    </a>
+
+    <a href="https://github.com/egextswq" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      GitHub
+    </a>
+  </div>
+</div>
+
+<footer>
+  © 2023 Ege Uludaş. Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>

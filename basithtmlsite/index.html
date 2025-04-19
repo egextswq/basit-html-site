@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ana Sayfa | Ege</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00e6b8;
+      transform: scale(1.1);
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 20px;
+      text-align: center;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #00e6b8;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 500;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    p strong {
+      color: #00e6b8;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .content {
+        padding: 60px 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Anasayfa</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <a href="projeler.html">Projeler</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+
+<div class="content">
+  <h1>Merhaba, Benim Adım Ege 👋</h1>
+  <p><strong>Bilişim Güvenliği Teknolojisi</strong> öğrencisiyim.<br>Güvenli dijital dünyalar inşa etmeye tutkuyla bağlıyım.</p>
+</div>
+
+</body>
+</html>
